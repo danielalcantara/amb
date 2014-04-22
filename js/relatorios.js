@@ -1,0 +1,3 @@
+function FecharJanela() {
+    window.close()
+}

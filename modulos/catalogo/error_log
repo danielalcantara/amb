@@ -1,0 +1,16 @@
+[12-Apr-2013 07:52:27] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[12-Apr-2013 07:52:41] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[12-Apr-2013 07:52:51] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[12-Apr-2013 08:08:08] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[16-Apr-2013 13:17:01] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[18-Apr-2013 09:18:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[18-Apr-2013 09:18:14] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[18-Apr-2013 09:40:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[18-Apr-2013 09:40:12] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[29-Apr-2013 15:06:46] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[02-May-2013 10:27:47] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[10-May-2013 08:35:36] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[20-May-2013 11:31:58] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[29-May-2013 10:40:27] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[29-May-2013 10:40:41] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63
+[03-Sep-2013 09:08:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/cont9rg2/public_html/amb/modulos/catalogo/editar.php on line 63

@@ -1,0 +1,52 @@
+/* 
+    Document   : relatorios
+    Created on : 27/01/2013, 20:19:12
+    Author     : Daniel Alcântara
+    Description:
+        Folha de estilos para as páginas de relatório.
+*/
+
+.tabRelatorio {
+    width: 935px;
+}
+
+.tabRelatorio, .tbTotais {
+    border-collapse: collapse;
+}
+
+.tabRelatorio td, .tabRelatorio th, .tbTotais td {
+    border: 1px #000 solid;
+    padding: 0 5px;
+}
+
+.tbTotais td {
+    padding: 0 5px;
+}
+
+.tdTotalTitulo {
+    font-weight: bold;
+}
+
+.tdTitulo, .tdTitulo2 {
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tdTitulo2 {
+    font-size: 16px;
+}
+
+#tdLogo {
+    width: 100px;
+}
+
+.trCabDados td {
+    padding: 0 5px;
+}
+
+.msgErro {
+    color: red;
+}
+

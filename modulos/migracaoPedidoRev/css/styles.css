@@ -1,0 +1,20 @@
+/* 
+    Created on : 25/11/2013, 14:00:31
+    Author     : Daniel
+*/
+
+.formTableless label {
+    width: 150px;
+}
+
+#divEsquerda {
+    width: 60%;
+}
+
+#nomeRevDestino {
+    width: 400px !important;
+}
+
+#divInfRevendedor {
+    width: 250px;
+}

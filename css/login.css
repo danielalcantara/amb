@@ -1,0 +1,67 @@
+/* 
+    Document   : login
+    Created on : 11/01/2013, 15:13:05
+    Author     : Daniel Alcântara Cordeiro
+    Description:
+        Folha de estilos da página de login do sistema.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background-color: #154D91;
+}
+
+#divLogin {
+    background: url('../img/topo/logo.png') #ffffff no-repeat center 10px;
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 15%;
+    margin-left: -210px;
+    width: 420px;
+    height: 340px;
+    border: 1px #000 solid;
+}
+
+#divTitulo {
+    margin-top: 100px;
+}
+
+#divForm {
+    position: relative;
+    float: left;
+    left: 50%;
+    margin-left: -105px;
+}
+
+#divLogin p {
+    text-align: center;
+}
+
+#divLabels, #divInputs {
+    float: left;
+}
+
+#divLabels p {
+    margin-top: 20px;
+}
+
+#divInputs p {
+    margin-left: 5px;
+}
+
+.divClear {
+    clear: both;
+}
+
+#divBotoes {
+    text-align: center;
+}
+
+.msgErro {
+    color: red;
+    margin: 0;
+}

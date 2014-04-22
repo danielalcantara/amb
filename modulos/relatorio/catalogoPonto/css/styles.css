@@ -1,0 +1,58 @@
+.tabRelatorio {
+    width: 935px;
+}
+
+.tabRelatorio, .tbTotais {
+    border-collapse: collapse;
+}
+
+.tdTitulo {
+    padding: 10px 0 !important;
+}
+
+.tabRelatorio th, .tbTotais td, .trDados td {
+    border: 1px #000 solid;
+    padding: 0 5px;
+}
+
+.tbTotais {
+    margin: 10px 0 20px 0;
+}
+
+.tbTotais td {
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.tdTotalTitulo {
+    font-weight: bold;
+}
+
+.tdTitulo, .tdTitulo2 {
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tdTitulo2 {
+    font-size: 16px;
+}
+
+#tdLogo {
+    width: 100px;
+}
+
+.trCabDados td {
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.trDados td {
+    font-size: 13px;
+}
+
+.msgErro {
+    color: red;
+}
+

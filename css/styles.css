@@ -1,0 +1,455 @@
+/* 
+    Document   : styles
+    Created on : 12/08/2012, 20:21:32
+    Author     : Daniel Alcântara Cordeiro
+    Description:
+        Folha de estilos para o sistema SDC
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background: #ffffff url('../img/base/bgPagina.png') repeat-x left top;
+    font:12px Verdana, Arial, Helvetica;
+}
+
+.menuCorrente a span {
+    color: #C4F0FF !important;
+    font-weight: bold !important;
+}
+
+table {
+    width: 100%;
+    border: 1px #C0D8E8 solid;
+    border-collapse: collapse;
+}
+
+table tr td, table tr th {
+    border: 1px #C0D8E8 solid;
+}
+
+table tr th {
+    background-color: #E1EDF5;
+}
+
+.tbListagem {
+    text-align: center;
+}
+
+.tbListagem td {
+    padding: 0 5px;
+}
+
+.linhaImpar {
+    background-color: #F4F8FB;
+}
+
+.linhaPar {
+    background-color: #ffffff;
+}
+
+#corpoPagina {
+    position: absolute;
+    float: left;
+    left: 50%;
+    width: 980px;
+    margin-left: -490px;
+}
+
+#topo {
+    padding-top: 10px;
+    width: 100%;
+    height: 90px;
+    float: left;
+}
+
+#meio {
+    float: left;
+    width: 100%;
+}
+
+.botaoBusca {
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+div#menu {
+    margin:5px 0 0 0;
+}
+
+#paginas {
+    float: left;
+    margin-top: -1px;
+    border: 1px #FE982B solid;
+    width: 100%;
+    min-height: 400px;
+}
+
+#rodape {
+    float: left;
+    width: 982px;
+    height: 30px;
+    background-color: #0D315E;
+}
+
+#copyright {
+    margin: 7px;
+    display: block !important;
+    visibility: visible;
+    color: #E1EDF5;
+}
+
+#index {
+    background: #ffffff url('../img/base/fundo.png') no-repeat center center;
+    width: 100%;
+    height: 400px;
+}
+
+.formFiltroCadastro {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.listagem {
+    margin: 20px 30px 10px 30px;
+}
+
+.tituloPagina {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px 0 20px 20px;
+    color: #87B5D3;
+}
+
+.msgAlerta {
+    color: red;
+    font-weight: bold;
+}
+
+.selecUF {
+    width: 50px !important;
+}
+
+/* Estilos paginação */
+#paginacao {
+    margin: 2px 0 2px 0;
+    float: right;
+    text-align: right;
+}
+
+.linkPaginacaoAtivo {
+    text-decoration: none;
+    color: #3888E0;
+}
+
+.linkPaginacaoInativo {
+    text-decoration: none;
+    color: #000;
+}
+
+.inconPaginacao {
+    vertical-align: bottom;
+}
+
+.botaoAdd {
+    float: left;
+    margin-left: 30px;
+    border: none;
+}
+
+.botao {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.botoesAcao {
+    clear: both;
+    margin: 0 0 10px -4px;
+    padding-top: 20px;
+}
+
+.label {
+    font-weight: bold;
+    margin: 8px 5px 15px 0;
+}
+
+.inputs {
+    margin: 3px 0 3px 0;
+}
+
+.select {
+    margin: 5px 0;
+}
+
+.data {
+    width: 70px !important;
+}
+
+.msgErro, .msgSucesso {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.divMsg {
+    margin: 10px;
+}
+
+.msgErro {
+    color: red;
+}
+
+.msgSucesso {
+    color: green;
+}
+
+.msgInfo {
+    color: blue;
+}
+
+.formAcao {
+    float: left;
+    margin-left: 9px;
+}
+
+.colCenter {
+    padding: 0 10px 0 10px;
+}
+
+#construcao {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.celCenter {
+    text-align: center;
+}
+
+.alertaConstrucao {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.linhaAcao {
+    cursor: pointer;
+}
+
+.linhaAcao:hover {
+    background-color: #F77575;
+}
+
+.divConteudoPagina {
+    margin: 0 20px;
+}
+
+.divForm {
+    font-weight: bold;
+}
+
+.divLabels, .divInputs {
+    float: left;
+    text-align: left;
+}
+
+.divLabels p {
+    margin: 15px 0;
+}
+
+.divInputs p {
+    margin: 15px 8px 0;
+}
+
+.divInputs select {
+    margin: 0;
+}
+
+.msgObservacao {
+    color: red;
+}
+
+#meio table {
+    margin-bottom: 10px;
+}
+
+.campoMoeda {
+    width: 70px !important;
+    text-align: right;
+}
+
+.divClear {
+    clear: both;
+    width: 100%;
+}
+
+.tableForm {
+    border: none;
+    border-collapse: collapse;
+    width: auto;
+}
+
+.tableForm tr td, .tableForm tr th {
+    border: none;
+    padding: 5px 5px 10px;
+}
+
+#comboRevendedor {
+    float: left;
+}
+
+.btnImg {
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.tituloCampo {
+    font-weight: bold;
+}
+
+.campoHidden {
+    visibility: hidden;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+#divEsquerda {
+    width: 50%;
+    float: left;
+}
+
+#divDireita {
+    float: left;
+}
+
+#divInfRevendedor {
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    height: 80px;
+    width: 200px;
+    border: 5px #0D315E double;
+}
+
+.tituloInfRevendedor {
+    font-size: 13px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.dadosRevendedor {
+    font-weight: bold;
+    margin: 3px 0;
+    font-size: 11px;
+}
+
+/* Personalizando campos do JqueyUI */
+.ui-campoData {
+    width: 77px !important;
+}
+
+.ui-campoNumero {
+    width: 100px !important;
+    text-align: right;
+}
+
+/* Formulário tableless */
+
+.formTableless {
+    margin: 0 30px 10px 30px;
+}
+
+.formTableless label{
+    float: left;
+    margin-top: 5px;
+    font-weight: bold;
+    width: 120px;
+}
+
+.formTableless input[type="text"], .formTableless textarea {
+    width: 180px;
+    margin-bottom: 5px;
+}
+
+.formTableless select {
+    width: 184px;
+}
+
+.formTableless textarea{
+    width: 250px;
+    height: 150px;
+}
+
+.formTableless .boxes{
+    width: 1em;
+}
+
+.formTableless #submitbutton{
+    margin-left: 120px;
+    margin-top: 5px;
+    width: 90px;
+}
+
+.formTableless br{
+    clear: left;
+}
+
+.formTableless input[readonly="readonly"] {
+    border: none;
+    font-weight: bold;
+}
+
+/* Fim estilos formulário tableless */
+
+/* Estilos para campos de formulário */
+
+.cep {
+    width: 68px !important;
+}
+
+.telefone {
+    width: 88px !important;
+}
+
+.cpf {
+    width: 92px !important;
+}
+
+.rg {
+    width: 78px !important;
+}
+
+.sexo {
+    width: 40px !important;
+}
+
+.numEndereco {
+    width: 60px !important;
+}
+
+.estadoCivil {
+    width: 110px !important;
+}
+
+.inputTextoCurto {
+    width: 100px !important;
+}
+
+.inputTextoMedio {
+    width: 250px !important;
+}
+
+.inputTextoLongo {
+    width: 350px !important;
+}
+
+.selectTextoLongo {
+    width: 354px !important;
+}
+
+/* Fim campos formulário */
