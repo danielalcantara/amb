@@ -12,7 +12,7 @@ $util->getTopoPagina($cfg);
 ?>
 <p class="tituloPagina">Relatório por revendedores</p>
 <div>
-    <form name="filtroRelatorio" id="filtroRelatorio" class="formTableless" method="post" action="" onsubmit="GerarRelatorio();">
+    <form name="filtroRelatorio" id="filtroRelatorio" class="formTableless" method="post" action="" onsubmit="return GerarRelatorio();">
         <p class="label">Dados para gerar relatório:</p>
         <label for="IdPonto">Ponto de Venda:</label>
         <select name="IdPonto" id="IdPonto" onchange="CarregaComboRevendedor(this.value, '<?php echo pegarRaizSite(); ?>');">

@@ -13,4 +13,5 @@ function GerarRelatorio() {
     
     pagina = "relatorio.php?idRevendedor=" + idRevendedor + "&dataInicio=" + dataInicio + "&dataFim=" + dataFim + "";
     AbrirPopup(pagina, nome, 950, 650, "yes");
+    return true;
 }
