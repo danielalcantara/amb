@@ -85,7 +85,7 @@ class pedidoDao implements IGenericDao {
             $statement .= " AND r.cod_ponto = :IdPonto";
             $statement .= " ORDER BY r.nome";
         } else {
-            $statement .= " ORDER BY nome_ponto, r.nome";
+            $statement .= " ORDER BY cod_ponto, r.nome";
         }
         
         $stmt = $this->con->prepare($statement);

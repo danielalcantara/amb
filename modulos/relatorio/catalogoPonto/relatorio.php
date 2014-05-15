@@ -103,8 +103,8 @@ if (is_numeric($idCatalogo)) {
                     '</td>
             </tr>
         </table>';
-
-            $impressorPdf->SetHTMLHeader(utf8_encode($cabecalho));
+            
+            $impressorPdf->SetHTMLHeader(utf8_encode($cabecalho), "BLANK", true);
 
             $dados = '<table class="tabRelatorio" border="1">
             <thead>

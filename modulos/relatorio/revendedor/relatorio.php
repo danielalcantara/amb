@@ -7,10 +7,11 @@ session_start();
 
 protegePagina();
 
-$dataInicio = null;
-$dataFim = null;
+$idRevendedor = filterGet('idRevendedor');
+$dataInicio = filterGet('dataInicio');
+$dataFim = filterGet('dataFim');
 
-if (isset($_GET['idRevendedor'])) {
+if (is_numeric($idRevendedor)) {
     $idRevendedor = anti_injection($_GET['idRevendedor']);
     $where = " where IdRevendedor = " . $idRevendedor;
 
@@ -21,23 +22,16 @@ if (isset($_GET['idRevendedor'])) {
     $dadosRevendedor = mysql_fetch_array($result);
 } else {
     echo '<script type="text/javascript">FecharJanela();</script>';
+    die();
 }
 
-if (isset($_GET['dataInicio'])) {
-    $dataInicio = anti_injection($_GET['dataInicio']);
+if (validaDataView($dataInicio) and validaDataView($dataFim)) {
     $dataInicioBD = FormatDataViewBD($dataInicio);
-}
-
-if (isset($_GET['dataFim'])) {
-    $dataFim = anti_injection($_GET['dataFim']);
     $dataFimBD = FormatDataViewBD($dataFim);
-}
-
-if ($dataInicio and $dataFim) {
     $where .= " AND DataPedido BETWEEN '" . $dataInicioBD . "' AND '" . $dataFimBD . "'";
-} elseif ($dataInicio) {
+} elseif (validaDataView($dataInicio)) {
     $where .= " AND DataPedido >= '" . $dataInicioBD . "'";
-} elseif ($dataFim) {
+} elseif (validaDataView($dataFim)) {
     $where .= " AND DataPedido <= '" . $dataFimBD . "'";
 }
 
@@ -250,4 +244,3 @@ $result = mysql_query($sql);
 </html>
 <?php
 mysql_close($conn);
-?>

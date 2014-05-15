@@ -207,7 +207,7 @@ function filterPost($var, $idArray = false) {
         $var = filter_input(INPUT_POST, $var, FILTER_SANITIZE_STRING);
     }
 
-    $var = is_null($var) ? false : $var;
+    $var = empty($var) ? false : $var;
 
     return $var;
 }
@@ -219,9 +219,7 @@ function filterGet($var, $idArray = false) {
         $var = filter_input(INPUT_GET, $var, FILTER_SANITIZE_STRING);
     }
 
-    if (is_null($var) or ($var === false)) {
-        return false;
-    }
+    $var = empty($var) ? false : $var;
 
     return $var;
 }
@@ -233,9 +231,7 @@ function filterServer($var, $idArray = false) {
         $var = filter_input(INPUT_SERVER, $var, FILTER_SANITIZE_STRING);
     }
 
-    if (is_null($var) or ($var === false)) {
-        return false;
-    }
+    $var = empty($var) ? false : $var;
 
     return $var;
 }
