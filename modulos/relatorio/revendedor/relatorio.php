@@ -47,7 +47,7 @@ $result = mysql_query($sql);
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Ralatório de pedidos por data</title>
-        <link type="text/css" rel="stylesheet" href="<?php echo pegarRaizSite(); ?>css/relatorios.css">
+        <link type="text/css" rel="stylesheet" href="css/relatorios.css">
     </head>
     <body>
         <table class="tabRelatorio">

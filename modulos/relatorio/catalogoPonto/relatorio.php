@@ -16,7 +16,8 @@ protegePagina();
 
 $facade = new FacadeRelatorio();
 
-$impressorPdf = new ImpressorPDF('', '', 0, '', 9, 9, 40, 15, 8, 8, 'P');
+$impressorPdf = new ImpressorPDF('', 'A4-L', 0, '', 9, 9, 40, 15, 8, 8, 'L');
+$impressorPdf->displayDefaultOrientation = true;
 
 $impressorPdf->SetDisplayMode('fullpage');
 
@@ -245,7 +246,7 @@ if (is_numeric($idCatalogo)) {
             $html = $dados . $totais;
             $impressorPdf->imprimeHtmlPdf(utf8_encode($html));
             if ($cont < $numPedidos) {
-                $impressorPdf->AddPage();
+                $impressorPdf->AddPage("L");
             }
         }
     } else {
