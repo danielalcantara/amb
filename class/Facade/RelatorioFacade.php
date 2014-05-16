@@ -18,7 +18,7 @@ class FacadeRelatorio {
     }
     
     public function listarPedidos($idCatalogo, $idPonto, $dataPedido, $dataEntrega) {
-        $pedidoDao = new pedidoDao();
+        $pedidoDao = new PedidoDao();
         $pedidos = $pedidoDao->listarPorCatalogoPontoData($idCatalogo, $idPonto, $dataPedido, $dataEntrega);
         
         return $pedidos;

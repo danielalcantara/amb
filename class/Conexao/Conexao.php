@@ -17,7 +17,7 @@ class Conexao extends PDO {
 
     public static function getInstance() {
         // Se a instancia n�o existe cria uma inst�ncia
-        if (!empty(self::$instancia)) {
+        if (empty(self::$instancia)) {
             try {
                 self::$instancia = new Conexao();
                 self::$instancia->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

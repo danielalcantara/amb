@@ -1,11 +1,13 @@
 <?php
 
+require_once pegarRaizSite() . 'class/DAO/IGenericDao.php';
+
 /**
  * Description of PontoDao
  *
  * @author daniel.cordeiro
  */
-class PontoDao {
+class PontoDao implements IGenericDao {
 
     private $con = null;
 
@@ -55,6 +57,18 @@ class PontoDao {
         }
 
         return $result;        
+    }
+
+    public function delete($id) {
+        
+    }
+
+    public function insert($model) {
+        
+    }
+
+    public function update($model) {
+        
     }
 
 }

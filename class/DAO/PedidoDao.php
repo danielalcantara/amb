@@ -7,7 +7,7 @@ require_once pegarRaizSite() . 'class/DAO/IGenericDao.php';
  *
  * @author daniel.cordeiro
  */
-class pedidoDao implements IGenericDao {
+class PedidoDao implements IGenericDao {
 
     private $con = null;
 
@@ -85,7 +85,7 @@ class pedidoDao implements IGenericDao {
             $statement .= " AND r.cod_ponto = :IdPonto";
             $statement .= " ORDER BY r.nome";
         } else {
-            $statement .= " ORDER BY cod_ponto, r.nome";
+            $statement .= " ORDER BY pt.nome_ponto, pt.cod_ponto, r.nome";
         }
         
         $stmt = $this->con->prepare($statement);

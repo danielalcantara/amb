@@ -9,7 +9,7 @@ $idRevendedorOrigem = filterPost('idRevendedorOrigem');
 $idRevendedorDestino = filterPost('revendedor');
 
 if(is_numeric($idRevendedorOrigem) and is_numeric($idRevendedorDestino)) {
-    $pedidoDao = new pedidoDao();
+    $pedidoDao = new PedidoDao();
     if($pedidoDao->migrarPorRevendedor($idRevendedorOrigem, $idRevendedorDestino)) {
         RedirecPagina('migracao.php?idRevendedorOrigem=' . $idRevendedorOrigem . '&msgSucesso=Migração realizada com sucesso!');
     } else {

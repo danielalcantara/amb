@@ -40,7 +40,7 @@ class PedidoFacade {
     }
 
     public function buscarPedido($idPedido) {
-        $pedidoDao = new pedidoDao();
+        $pedidoDao = new PedidoDao();
         $revendedorDao = new RevendedorDao();
         $pedido = $pedidoDao->buscar($idPedido);
         $revendedor = $revendedorDao->buscar($pedido['IdRevendedor']);

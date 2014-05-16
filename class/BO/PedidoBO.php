@@ -22,7 +22,7 @@ class PedidoBO {
             $sucess = false;
         }
         if ($sucess) {
-            $pedidoDao = new pedidoDao();
+            $pedidoDao = new PedidoDao();
             Conexao::getInstance()->beginTransaction();
             try {
                 $this->persistePedido($sucess, $this->pedido, $pedidoDao);
