@@ -245,6 +245,7 @@ if (is_numeric($idCatalogo)) {
                         </table>';
             $html = $dados . $totais;
             $impressorPdf->imprimeHtmlPdf(utf8_encode($html));
+            $valorTotal = 0;
             if ($cont < $numPedidos) {
                 $impressorPdf->AddPage("L");
             }
