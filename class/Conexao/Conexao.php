@@ -17,10 +17,11 @@ class Conexao extends PDO {
 
     public static function getInstance() {
         // Se a instancia n�o existe cria uma inst�ncia
-        if (!isset(self::$instancia)) {
+        if (!empty(self::$instancia)) {
             try {
                 self::$instancia = new Conexao();
                 self::$instancia->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                self::$instancia->setAttribute(PDO::ATTR_ORACLE_NULLS, PDO::NULL_EMPTY_STRING);
             } catch (Exception $ex) {
                 echo 'Falha ao conectar com o banco. Erro: ' . $ex->getMessage();
                 exit();
