@@ -1,6 +1,5 @@
 <?php
 
-require_once 'security.php';
 require_once 'initSettings.php';
 
 // Verifica se o usuário esta logado no sistema

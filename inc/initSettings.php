@@ -6,6 +6,8 @@ header('Content-type: text/html; charset=utf-8');
 session_cache_expire(60);
 session_start();
 
+require_once 'security.php';
+
 // Funções do sistema
 require_once 'funcoes.php';
 

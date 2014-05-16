@@ -62,7 +62,7 @@ function validaUsuario($usuario, $senha) {
         // Nenhum registro foi encontrado => o usuário é inválido
         $retorno = false;
     } else {
-        if (crypt($nsenha, $resultado['Senha'])) {
+        if (crypt($nsenha, $resultado['Senha']) == $resultado['Senha']) {
             // O registro foi encontrado => o usuário é valido
             // Definimos os valores na sessão com os dados do usuário
             $retorno = logarUsuario($resultado);

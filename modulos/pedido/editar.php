@@ -45,7 +45,7 @@ if (filterPost('acao') == 'editar') {
             $Situacao and validaDataView($DataPedido) and validaDataView($DataEntrega) and
             (!$Desconto or is_double($DescontoBd)) and (!$DataSituacao or validaDataView($DataSituacao))) {
 
-        $CodPedido = is_numeric($CodPedido) ? $CodPedido : mt_rand(5, 9999) . date('dmYHis');
+        $CodPedido = is_numeric($CodPedido) ? $CodPedido : mt_rand(0, 999) . date('dm');
         $DataPedidoBd = FormatDataViewBD($DataPedido);
         $DataEntregaBd = FormatDataViewBD($DataEntrega);
         $DataSituacaoBd = FormatDataViewBD($DataSituacao) ? FormatDataViewBD($DataSituacao) : null;
