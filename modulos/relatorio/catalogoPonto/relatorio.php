@@ -31,10 +31,10 @@ $impressorPdf->WriteHTML($stylesheet, 1);
 
 $impressorPdf->SetFooter('{DATE j/m/Y - H:i}|{PAGENO}/{nb}|AMB / Distribuidora');
 
-$idPonto = anti_injection($_GET['ponto']);
-$idCatalogo = anti_injection($_GET['catalogo']);
-$dataPedido = isset($_GET['dataPedidos']) ? anti_injection($_GET['dataPedidos']) : '';
-$dataEntrega = isset($_GET['dataEntrega']) ? anti_injection($_GET['dataEntrega']) : '';
+$idPonto = filterGet('ponto');
+$idCatalogo = filterGet('catalogo');
+$dataPedido = filterGet('dataPedidos');
+$dataEntrega = filterGet('dataEntrega');
 $valorTotal = 0;
 $totalRetirado = 0;
 
@@ -104,7 +104,7 @@ if (is_numeric($idCatalogo)) {
                     '</td>
             </tr>
         </table>';
-            
+
             $impressorPdf->SetHTMLHeader(utf8_encode($cabecalho), "BLANK", true);
 
             $dados = '<table class="tabRelatorio" border="1">
