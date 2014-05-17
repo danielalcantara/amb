@@ -56,7 +56,7 @@ $result = mysql_query($sql);
                     <img src="<?php echo pegarRaizSite(); ?>img/topo/logo.png">
                 </td>
                 <td class="tdTitulo" colspan="4">
-                    Relatório de catálogo por revendedor
+                    Relatório de pedidos por revendedor
                 </td>
             </tr>
             <tr class="trCabDados">
